@@ -1,0 +1,100 @@
+.SignContainer {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  /*width: 100%;
+  height: 100vh;*/
+  display: flex;
+  flex-direction: column;
+}
+
+/*头部*/
+.header {
+  width: 100%;
+  height: 250rpx;
+  flex-grow: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.postrait {
+  width: 100rpx;
+  height: 100rpx;
+  flex-grow: 0;
+  border-radius: 50rpx;
+}
+
+.nickName {
+  margin-top: 40rpx;
+}
+
+.lineView {
+  margin-top: 40rpx;
+  width: 70%;
+  height: 2rpx;
+  flex-grow: 0;
+  background-color: #efeff4;
+}
+
+/*中间部分*/
+.body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.inputView {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.leftView {
+  height: 100%;
+  width: 50rpx;
+  position: relative;
+}
+
+.lineImageView {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.lineImage {
+  width: 100%;
+  height: 100%;
+}
+
+.circleImage {
+  width: 100%;
+  height: 100%;
+}
+
+.rightInput {
+  margin-left: 20rpx;
+  width: 400rpx;
+  border-bottom: 1px solid #efeff4;
+}
+
+
+/*底部*/
+.footer {
+  height: 100rpx;
+  padding-top: 10rpx;
+  width: 100%;
+  flex-grow: 0;
+}
+
+.signBtn {
+  width: 80%;
+  height: 80rpx;
+  margin-left: 10%;
+}

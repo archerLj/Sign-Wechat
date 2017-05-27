@@ -1,0 +1,60 @@
+<view class="SignContainer" hidden="{{hiddenSign}}">
+  <view class="header">
+    <image class="postrait" src="{{userInfo.avatarUrl}}"></image>
+    <text class="nickName">{{userInfo.nickName}}</text>
+    <view class="lineView"></view>
+  </view>
+
+  <view class="body">
+      <view class="inputView">
+        <view class="leftView">
+          <view class="lineImageView">
+          <image src="{{validateImages[0]}}" class="circleImage" mode="scaleToFill"></image>
+          </view>
+          <image src="../../images/line.svg" class="lineImage" mode="scaleToFill"></image>
+        </view>
+        <input class="rightInput" placeholder="姓名" bindblur="bindconfirm" data-itemIndex="0"/>
+      </view>
+      <view class="inputView">
+      <view class="leftView">
+          <view class="lineImageView">
+          <image src="{{validateImages[1]}}" class="circleImage" mode="scaleToFill"></image>
+          </view>
+          <image src="../../images/line.svg" class="lineImage" mode="scaleToFill"></image>
+        </view>
+        <input class="rightInput" placeholder="工号" bindblur="bindconfirm" data-itemIndex="1"/>
+      </view>
+      <view class="inputView">
+      <view class="leftView">
+          <view class="lineImageView">
+          <image src="{{validateImages[2]}}" class="circleImage" mode="scaleToFill"></image>
+          </view>
+          <image src="../../images/line.svg" class="lineImage" mode="scaleToFill"></image>
+        </view>
+        <text class="rightInput" bindtap="departmentTouch" data-itemIndex="2">{{departmentText}}</text>
+        <!--<input bindtap="departmentTouch" class="rightInput" placeholder="部门" data-itemIndex="2"/>-->
+      </view>
+      <view class="inputView">
+      <view class="leftView">
+          <view class="lineImageView">
+          <image src="{{validateImages[3]}}" class="circleImage" mode="scaleToFill"></image>
+          </view>
+          <image src="../../images/line.svg" class="lineImage" mode="scaleToFill"></image>
+        </view>
+        <input class="rightInput" placeholder="电话" bindblur="bindconfirm" data-itemIndex="3"/>
+      </view>
+      <view class="inputView">
+      <view class="leftView">
+          <view class="lineImageView">
+          <image src="{{validateImages[4]}}" class="circleImage" mode="scaleToFill"></image>
+          </view>
+          <image src="../../images/line.svg" class="lineImage" mode="scaleToFill"></image>
+        </view>
+        <input class="rightInput" placeholder="职位" bindblur="bindconfirm" data-itemIndex="4"/>
+      </view>
+  </view>
+
+  <view class="footer">
+    <button bindtap="userSign" type="primary" class="signBtn">注册</button>
+  </view>
+</view>
