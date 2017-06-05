@@ -1,0 +1,11 @@
+<view class="container">
+  <scroll-view class="scroll-view">
+    <block wx:for="{{events}}" wx:key="time">
+      <view class="event-item">
+        <text class="actionType">{{item.eventType}}</text>
+        <text class="time">{{item.time}}</text>
+        <text class="{{item.commentClass}}">{{item.comment}}</text>
+      </view>
+    </block>
+  </scroll-view>
+</view>

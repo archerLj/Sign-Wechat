@@ -1,11 +1,13 @@
 {
   "pages":[
-    "pages/index/index"
+    "pages/index/index",
+    "pages/out/out",
+    "pages/history/history"
   ],
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
+    "navigationBarBackgroundColor": "black",
+    "navigationBarTitleText": "uSign",
+    "navigationBarTextStyle":"white"
   }
 }

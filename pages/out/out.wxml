@@ -1,0 +1,4 @@
+<view class="container">
+  <textarea placeholder="备注: 外出事由说明" auto-focus bindconfirm="confirm" bindblur="confirm" class="commentArea" />
+  <button class="commit-btn" type="primary" bindtap="commit">提交</button>
+</view>

@@ -1,3 +1,39 @@
+<view class="mainContainer" hidden="{{hiddenMain}}">
+  <view class="main-header">
+    <view class="userInfo-view">
+      <text class="userInfo-text">{{userInfo.name}}</text>
+      <text class="userInfo-text">{{userInfo.jobNum}}</text>
+      <text class="userInfo-text">{{userInfo.department.name}}  {{userInfo.position}}</text>
+    </view>
+  </view>
+
+  <view class="main-body">
+    <scroll-view class="main-scroll">
+      <block wx:for="{{events}}" wx:key="time">
+        <view class="main-scroll-item">
+          <text class="eventType">{{item.eventType}}</text>
+          <text class="time">{{item.time}}</text>
+          <text class="{{item.commentClass}}">{{item.comment}}</text>
+        </view>
+      </block>
+    </scroll-view>
+  </view>
+
+  <view class="location-view">
+      <image src="../../images/location.png" class="locationImage"></image>
+      <text class="address-text">{{address}}</text>
+    </view>
+
+  <view class="main-footer">
+    <button class="commit-btn" type="primary" bindtap="signCommit" disabled="{{disableCommit}}">{{btnName}}</button>
+    <view class="link-view">
+      <text class="link-text" bindtap="out">  外出  </text>
+      <text class="link-text" bindtap="history">  历史记录  </text>
+    </view>
+  </view>
+</view>
+
+<!--用户信息注册页-->
 <view class="SignContainer" hidden="{{hiddenSign}}">
   <view class="header">
     <image class="postrait" src="{{userInfo.avatarUrl}}"></image>
